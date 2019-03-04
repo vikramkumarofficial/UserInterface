@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Assignment</title>
+</head>
+<style type="text/css">
+	table,tr,td{
+		border: 2px solid black;
+		border-collapse: collapse;
+		font-weight: bold;
+		text-align: center;
+		/*color: green;*/
+
+	}
+
+	h1{
+		text-align: center;
+		color: red;
+	}
+
+	table{
+		/*margin-left: auto;
+		margin-right: auto;*/
+		margin: auto;
+
+	}
+	.col{
+		background-color: #C0F6FC;
+		color: blue;
+	}
+	.c1{
+		/*vertical-align: bottom;*/
+		text-align: right;
+	}
+
+	td{
+		height: 25px;
+	}
+	div{
+	border:1px solid blue;
+	margin: auto;
+	height: 450px;
+	width: 550px;
+	}
+</style>
+<body>
+	<div>
+	<h1>Energy Expenditures for Each Region</h1>
+	<br>
+	<table align="center">
+		<tr class="col">
+			<td rowspan="4" colspan="2"></td>
+			<td colspan="4">Type</td>
+		</tr>
+		<tr class="col">
+		<td colspan="2">Residential Customers</td>
+		<td colspan="2">Business Customers</td>
+		</tr>
+		<tr class="col">
+		<td colspan="2">Expenditures</td>
+		<td colspan="2">Expenditures</td>
+		</tr>
+		<tr class="col">
+		<td colspan="2">Sum</td>
+		<td colspan="2">Sum</td>
+		</tr>
+		<tr>
+			<td class="col">Region</td>
+			<td class="col">Divison</td>
+			<td rowspan="2" class="c1" colspan="2">$500</td>
+			<td rowspan="2" class="c1" colspan="2">$700</td>
+		</tr>
+		<tr>
+			<td rowspan="2" class="col">Northeast</td>
+			<td class="col">New England</td>
+		</tr>
+		<tr>
+			<td class="col">Middle Atlantic</td>
+			<td class="c1" colspan="2">$6000</td>
+			<td class="c1" colspan="2">$699</td>
+		</tr>
+		<tr>
+			<td rowspan="2" class="col">West</td>
+			<td class="col">Mountain</td>
+			<td class="c1" colspan="2">$324</td>
+			<td class="c1" colspan="2">$654</td>
+		</tr>
+		<tr>
+			<td class="col">Pacific</td>
+			<td class="c1" colspan="2">$666</td>
+			<td class="c1" colspan="2">$3332</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

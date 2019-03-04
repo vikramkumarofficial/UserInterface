@@ -1,0 +1,125 @@
+/*body,html{
+	margin: 0;
+	height: 100%
+}*/
+#container{
+	display: flex;
+	width: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+/*div{
+	margin:0;
+	padding: 0;
+}*/
+div#sidebar{
+	background-color: #343549;
+	width: 20%;
+	height: 100vh;
+	margin: 0;
+	color: #50576B;
+
+}
+h1{
+	margin: 0;
+	color: #C0C0CB;
+}
+
+div#Dashboard{
+flex-grow: 1;
+background-color: #F9F9FB;
+/*float: right;*/
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+h5{
+	margin-left: 20px;
+	color:#8B96AB;
+
+
+}
+
+
+div#header{
+	padding: 20px;
+	background-color: #EDECF1;
+	height: 5%;	
+	/*display: flex;
+	align-content: center;*/
+}
+
+div#card{
+height: 35%;
+background-color: #F8F8FA;
+}
+
+div#container2{
+	display: flex;
+	background-color: white;
+	flex-grow: 1;
+	justify-content:space-around;
+
+}
+
+div#transaction{
+width: 60%;
+background-color: #FFFFFF;
+}
+
+div#chat{
+flex-grow: 1;
+}
+
+
+a{
+	display: block;
+	margin: 20px;
+	text-decoration: none;
+	color:#8B96AB;
+}
+
+
+
+
+#cardcontain{
+	display: flex;
+	justify-content:space-around;
+}
+
+.cards{
+	background-color: #636FD5;
+	height: 200px;
+	width: 257px;
+}
+
+
+th, td {
+  border-bottom: 1px solid #ddd;
+    padding: 15px;
+
+}
+
+
+.edit{
+	background-color: #6762db;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+}
+
+.cancel{
+	background-color: #fc3f78;
+}
+
+.delivered{
+	background-color: #009f95;
+}
+
+.pending{
+	background-color: #fec94c
+}
