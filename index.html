@@ -1,120 +1,274 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dashboard</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
-<div id="container">
-	<div id="sidebar">
-		<h1 align="center">GeekyAnts</h1>
-		<br>
-		<h5>MAIN</h5>
-		<nav>
-			<ul>
-				<li><a href=""><span><i class="fas fa-home"></i>Dashboard</span></a></li>
-				<li><a href=""><span><i class="fa fa-calendar" aria-hidden="true"></i>Calendar</span></a></li>
-				<li><a href=""><span><i class="fas fa-envelope"></i>Email</span></a></li>
-				<li><a href=""><span><i class="fas fa-home"></i>UI Elements</span></a></li>
-				<li><a href=""><span><i class="fa fa-wpforms" aria-hidden="true"></i>Forms</span></a></li>
-				<li><a href=""><span><i class="fa fa-bar-chart" aria-hidden="true"></i>Charts</span></a></li>
-				<li><a href=""><span><i class="fa fa-table" aria-hidden="true"></i>Tables</span></a></li>
-				<li><a href=""><span><i class="far fa-smile"></i>Icons</span></a></li>
-				<li><a href=""><span><i class="fa fa-map-marker" aria-hidden="true"></i>Maps</span></a></li>
-			</ul>
-		</nav>	
-	</div>
-	<div id="Dashboard">
-		<div id="header">
-			<i class="fas fa-bars"></i>&nbsp;&nbsp;&nbsp;
-			<span style="background-color: #F8F9FB;">Create <i class="fa fa-caret-down" aria-hidden="true"></i></span>
-			<span style="float: right;">
-				<form class="example" action="action_page.php" style="display: inline;">
-  					<input type="text" placeholder="Search.." name="search">
-  					<button type="submit"><i class="fa fa-search"></i></button>
-				</form>&nbsp;&nbsp;&nbsp;
-				<img src="" alt="India Flag">Hindi<i class="fa fa-caret-down" aria-hidden="true"></i>
-				<i class="fas fa-square"></i>&nbsp;&nbsp;&nbsp;
-				<i class="fas fa-bell"></i>&nbsp;&nbsp;&nbsp;
-				<img src="" alt="profilepic">
-			</span>
-		</div>
-		<div id="card">
-			<div style="display: inline;"><br>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard<br>&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Veltrix Dashboard</div>
-			<div style="display: inline;float: right;margin=10;background-color: #636FD5">&nbsp;&nbsp;&nbsp;Settings&nbsp;&nbsp;&nbsp;</div>
-			<br><br>
-			<div id="cardcontain">
-				<div class="cards"></div>
-				<div class="cards"></div>
-				<div class="cards"></div>
-				<div class="cards"></div>
-			</div>
+<body id="container">
+  <nav id="sidebar">
+    <section id="logo">GeekyAnts</section>
+    <section id="main-text">MAIN</section>
+    <ul id="menu">
+      
+        <li class="active">
+          <a href="#">
+          <i class="fas fa-home"></i>
+          <span class="text">Dashboard</span>
+          <span class="badge badge-sb color-6573d4">2</span>
+        </a>
+        </li>
+      
+      
+        <li>
+          <a href="#">
+          <i class="fas fa-calendar-week"></i>
+          <span class="text">Calender</span>
+          <i class="fas fa-angle-right arrow"></i>
+        </a>
+        </li>
+      
+      
+        <li>
+          <a href="#">
+          <i class="fas fa-envelope"></i>
+          <span class="text">Email</span>
+          <i class="fas fa-angle-right arrow"></i>
+        </a>
+        </li>
+    
+        <li>
+          <a href="#">
+          <i class="fas fa-cube"></i>
+          <span class="text">UI Elements</span>
+          <i class="fas fa-angle-right arrow"></i>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fab fa-wpforms"></i>
+          <span class="text">Forms</span>
+          <span class="badge badge-sb color-6573d4">9</span>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fas fa-chart-pie"></i>
+          <span class="text">Charts</span>
+          <i class="fas fa-angle-right arrow"></i>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fas fa-table"></i>
+          <span class="text">Tables</span>
+          <i class="fas fa-angle-right arrow"></i>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fas fa-smile-beam"></i>
+          <span class="text">Icons</span>
+          <i class="fas fa-angle-right arrow"></i>
+        </a>
+        </li>
 
-		</div>
-		<div id="container2">
-			<div id="transaction">
-				<br><br>
-				Latest Transaction
-				<br><br>
-				<hr>
-				<br><br>
-				<table>
-					<tr>
-						<td>(#)Id</td>
-						<td>Name</td>
-						<td>Date</td>
-						<td>Amount</td>
-						<td>Status</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>#14256</td>
-						<td><img src="">Philip Smead</td>
-						<td>15/1/2018</td>
-						<td>$94</td>
-						<td><div class="delivered">Delivered</div></td>
-						<td><div class="edit">Edit</div></td>
-					</tr>
-					<tr>
-						<td>#14257</td>
-						<td><img src="">Brent Shipley</td>
-						<td>16/1/2019</td>
-						<td>$112</td>
-						<td><div class="pending">Pending</div></td>
-						<td><div class="edit">Edit</div></td>
-					</tr>
-					<tr>
-						<td>#14258</td>
-						<td><img src="">Robert Sitton</td>
-						<td>17/1/2019</td>
-						<td>$116</td>
-						<td><div class="delivered">Delivered</div></td>
-						<td><div class="edit">Edit</div></td>
-					</tr>
-					<tr>
-						<td>#14259</td>
-						<td><img src="">Alberto Jackson</td>
-						<td>18/1/2019</td>
-						<td>$109</td>
-						<td><div class="cancel">Cancel</div></td>
-						<td><div class="edit">Edit</div></td>
-					</tr>
-					<tr>
-						<td>#14260</td>
-						<td><img src="">David Sanchez</td>
-						<td>19/1/2019</td>
-						<td>$120</td>
-						<td><div class="delivered">Delivered</div></td>
-						<td><div class="edit">Edit</div></td>
-					</tr>
-				</table>
+        <li>
+          <a href="#">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="text">Maps</span>
+          <span class="badge badge-sb color-fa4564">2</span>
+        </a>
+        </li>
+    </ul>
+  </nav>
 
-			</div>
-			<div id="chat">Chat</div>
-		</div>
-	</div>
+  <div id="content">
+    <header id="topbar">
+      <button class="fas fa-bars"></button>
+      <button id="create">Create<i class="fas fa-caret-down"></i></button>
+      <section class="search">
+        <input type="text" placeholder="Search..">
+        <i class="fas fa-search"></i>
+      </section>
+      <section class="lang-drop-down">
+        <img src="./images/usa.svg" alt="usa"><span>English</span><i class="fas fa-caret-down"></i>
+      </section>
+      <section class="screenshot-icon">
+        <i class="far fa-square screenshot-icon"></i>
+      </section>
+      <section class="notification">
+        <i class="far fa-bell"></i>
+      </section>
+      <section class="profile">
+        <img src="" alt="admin">
+      </section>
+    </header>
+    <main class="main-content">
+      <section class="title">
+        <h4>Dashboard</h4>
+        <p>Welcome to Veltrix Dashboard</p>
+      </section>
+      <section class="settings-btn" style="float: right;">
+        <button class="fas fa-cog" type="button"><span>Settings</span></button>
+      </section>
+      <!-- Stat cards -->
+      <section class="stat-group">
+        <article class="stat-card">
+          <div class="logo"><i class="fas fa-atlas"></i></div>
+          <div class="name">ORDERS</div>
+          <div class="percent ribbon-green">
+            <div class="ribbon"></div><span>+12%</span>
+          </div>
+          <div class="value">1,685<i class="fas fa-arrow-up"></i></div>
+          <div class="time-s">Since last month</div>
+          <div class="nxt"><i class="fas fa-arrow-right"></i></div>
+        </article>
+        <article class="stat-card">
+          <div class="logo"><i class="fas fa-sticky-note"></i></div>
+          <div class="name">REVENUE</div>
+          <div class="percent ribbon-red">
+            <div class="ribbon"></div><span>-28%</span>
+          </div>
+          <div class="value">52,268<i class="fas fa-arrow-down"></i></div>
+          <div class="time-s">Since last month</div>
+          <div class="nxt"><i class="fas fa-arrow-right"></i></div>
+        </article>
+        <article class="stat-card">
+          <div class="logo"><i class="fas fa-pencil-alt"></i></div>
+          <div class="name">AVERAGE PRICE</div>
+          <div class="percent ribbon-blue">
+            <div class="ribbon"></div><span>+00%</span>
+          </div>
+          <div class="value">15.8<i class="fas fa-arrow-up"></i></div>
+          <div class="time-s">Since last month</div>
+          <div class="nxt"><i class="fas fa-arrow-right"></i></div>
+        </article>
+        <article class="stat-card">
+          <div class="logo"><i class="fas fa-briefcase"></i></div>
+          <div class="name">PRODUCT SOFT</div>
+          <div class="percent ribbon-yellow">
+            <div class="ribbon"></div><span>+84%</span>
+          </div>
+          <div class="value">2436<i class="fas fa-arrow-up"></i></div>
+          <div class="time-s">Since last month</div>
+          <div class="nxt"><i class="fas fa-arrow-right"></i></div>
+        </article>
+      </section>
+      <!-- Transaction card -->
+      <section class="transaction">
+         <div id="transaction">
+                  Latest Transaction
+                  <hr>
+                  <br><br>
+                  <table>
+                     <tr>
+                        <td>(#)Id</td>
+                        <td>Name</td>
+                        <td>Date</td>
+                        <td>Amount</td>
+                        <td>Status</td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td>#14256</td>
+                        <td><img src="">Philip Smead</td>
+                        <td>15/1/2018</td>
+                        <td>$94</td>
+                        <td>
+                           <div class="delivered">Delivered</div>
+                        </td>
+                        <td>
+                           <div class="edit">Edit</div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>#14257</td>
+                        <td><img src="">Brent Shipley</td>
+                        <td>16/1/2019</td>
+                        <td>$112</td>
+                        <td>
+                           <div class="pending">Pending</div>
+                        </td>
+                        <td>
+                           <div class="edit">Edit</div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>#14258</td>
+                        <td><img src="">Robert Sitton</td>
+                        <td>17/1/2019</td>
+                        <td>$116</td>
+                        <td>
+                           <div class="delivered">Delivered</div>
+                        </td>
+                        <td>
+                           <div class="edit">Edit</div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>#14259</td>
+                        <td><img src="">Alberto Jackson</td>
+                        <td>18/1/2019</td>
+                        <td>$109</td>
+                        <td>
+                           <div class="cancel">Cancel</div>
+                        </td>
+                        <td>
+                           <div class="edit">Edit</div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>#14260</td>
+                        <td><img src="">David Sanchez</td>
+                        <td>19/1/2019</td>
+                        <td>$120</td>
+                        <td>
+                           <div class="delivered">Delivered</div>
+                        </td>
+                        <td>
+                           <div class="edit">Edit</div>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+      </section>
+
+      <section class="chat">
+      	<div class="container">
+<i class="fa fa-user" aria-hidden="true"></i>
+  <p> <span class="user1">John Deo</span><br><span class="chat1">Hello. How are you today?</span> </p>
+  <span class="time-right">11:00</span>
 </div>
 
+<div class="container darker">
+<i class="fas fa-user-circle"></i>
+  <p><span class="user1">Smith</span><br><span class="chat2">Hey! I'm fine. Thanks for asking!</span></p>
+  <span class="time-left">11:01</span>
+</div>
+
+<div class="container">
+<i class="fa fa-user" aria-hidden="true"></i>
+  <p><span class="user1">John Deo</span><br><span class="chat1">Sweet! So, what do you wanna do today?</span></p>
+  <span class="time-right">11:02</span>
+</div>
+
+<div class="container darker">
+<i class="fas fa-user-circle"></i>
+  <p><span class="user1">Smith</span><br><span class="chat2">Nah, I dunno. Play soccer.. or learn more coding perhaps?</span></p>
+  <span class="time-left">11:05</span>
+</div>
+
+<div class="container">
+	<input type="text" name="message" placeholder="Enter your Text" style="height:50px;width:150px;font-size:14pt;">
+	<button type="button" class="submit">Submit</button>
+</div>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>
